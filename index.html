@@ -12,21 +12,27 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand">Navbar</span>
+            <button class="navbar-toggler" id="btn" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
 
-    <div id="alert-box">alert</div>
 
-    <button id="id-btn">ID</button>
-    <button id="pw-btn">PW</button>
+    <ul class="list-group" id="group">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+    </ul>
 
     <script>
-        document.getElementById('id-btn').addEventListener('click', function () {
-            document.getElementById("alert-box").innerHTML = "id입력해주세요";
-            document.getElementById("alert-box").style.display = "block"
-        });
-
-        document.getElementById('pw-btn').addEventListener('click', function () {
-            document.getElementById("alert-box").innerHTML = "pw입력해주세요";
-            document.getElementById("alert-box").style.display = "block"
+        document.querySelector('#btn').addEventListener('click', function () {
+            document.querySelector('#group').classList.toggle('show');
         })
     </script>
 
