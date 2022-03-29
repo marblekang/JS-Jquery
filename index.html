@@ -25,7 +25,7 @@
     </nav>
 
 
-    <ul class="list-grou list-group-flush">
+    <ul class="list-group">
         <li class="list-group-item">An item</li>
         <li class="list-group-item">A second item</li>
         <li class="list-group-item">A third item</li>
@@ -33,7 +33,7 @@
         <li class="list-group-item">And a fifth one</li>
     </ul>
 
-    <div class="black-bg">
+    <div class="black-bg ">
         <div class="white-bg">
             <h4>로그인하세요</h4>
             <button class="btn btn-danger close">닫기</button>
@@ -53,11 +53,11 @@
         /* 위 코드를 Jquery 로 바꾸면 */
 
         $('.loginBtn').on('click', function () {
-            $('.black-bg').addClass('show');
+            $('.black-bg').addClass('show-modal');
         })
 
         $('.close').on('click', function () {
-            $('.black-bg').removeClass('show')
+            $('.black-bg').removeClass('show-modal')
         })
     </script>
     <script>
@@ -67,7 +67,7 @@
         }) */
 
         $('.navbar-toggler').on('click', function () {
-            $('.list-grou').toggleClass('show')
+            $('.list-group').toggleClass('show-menu');
         })
     </script>
 
